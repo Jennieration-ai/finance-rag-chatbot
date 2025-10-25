@@ -69,7 +69,7 @@ financial_separators = [
 - 기본적으로 유사도 기반 검색을 통해 Top-K 문서를 추출했습니다.
 
 - 이후 MMR 기반 리랭킹(Reranking) 을 적용하여 더 관련도 높은 문서가 상위에 오도록 정렬했습니다.
-    1. LLM 기반 점수 평가 – Upstage Chat 모델(`solar-pro-2`)을 이용하여 각 문서의 관련도를 0~100점으로 평가.
+    1. LLM 기반 점수 평가 – Upstage Chat 모델(`solar-pro2`)을 이용하여 각 문서의 관련도를 0~100점으로 평가.
 
     2. MMR 적용 – 관련성(Relevance)과 다양성(Diversity)을 함께 고려해 중복 문서를 줄이고 핵심 문서를 상위에 배치.
 
@@ -80,7 +80,7 @@ financial_separators = [
 
 - Streamlit UI를 통해 사용자 질문을 입력받고,
 - RAG 파이프라인을 거쳐 LLM이 답변을 생성합니다.
-ㄹ
+
 
 ## 📎 참고 기술 스택
 
