@@ -16,7 +16,7 @@ load_dotenv()
 
 API_KEY     = os.getenv("UPSTAGE_API_KEY", "")
 BASE_URL    = os.getenv("UPSTAGE_API_BASE_URL", "https://api.upstage.ai/v1")
-CHAT_MODEL  = os.getenv("UPSTAGE_CHAT_MODEL", "solar-pro-2")
+CHAT_MODEL  = os.getenv("UPSTAGE_CHAT_MODEL", "solar-pro2")
 EMBED_MODEL = os.getenv("UPSTAGE_EMBED_MODEL", "solar-embedding-1-large-passage")
 
 # ─────────────────────────────────────────────────────────────
@@ -52,11 +52,6 @@ st.markdown("""
   padding: 24px 28px; border-radius: 16px;
   background: linear-gradient(135deg, #EEF4FF, #F7FAFD);
   border: 1px solid #E5ECFF; margin-bottom: 14px;
-}
-.example-chip {
-  padding: 10px 14px; border-radius: 999px;
-  border: 1px solid #e6e6e6; background: #fff; font-size: 14px;
-  cursor: pointer; display: inline-block; margin-right: 8px; margin-bottom:8px;
 }
 .side-note { font-size: 12px; color: #6b7280; }
 </style>
